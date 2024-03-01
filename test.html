@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/IMG_7431.JPG');
+  min-height: 100%;
+}
+p{font-size: large;}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#My Skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">My Skills</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Vasudhan Reddy</b></h1>
+    <h3>Devops Engineer</h3>
+    <div class="social-icons" style="display: flex; justify-content: center;">
+        <a href="https://github.com/Vasudhanreddy" target="_blank" class="icon-link" style="margin: 0 10px; text-decoration: none;">
+            <img src="./Assests/github.png" alt="GitHub Logo" style="width: 50px; height: 50px;" onmouseover="this.style.transform = 'translateY(-5px)';" onmouseleave="this.style.transform = 'translateY(0)';">
+        </a>
+        <a href="https://www.linkedin.com/in/vasudhanreddy/" target="_blank" class="icon-link" style="margin: 0 10px; text-decoration: none;">
+            <img src="./Assests/linkedin.png" alt="LinkedIn Logo" style="width: 50px; height: 50px;" onmouseover="this.style.transform = 'translateY(-5px)';" onmouseleave="this.style.transform = 'translateY(0)';">
+        </a>
+        <a href="./Assests/Vasudhan-Reddy-Resume.pdf" target="_blank" class="icon-link" style="margin: 0 10px; text-decoration: none;">
+            <img src="./Assests/resume.png" alt="Resume Icon" style="width: 50px; height: 50px;" onmouseover="this.style.transform = 'translateY(-5px)';" onmouseleave="this.style.transform = 'translateY(0)';">
+        </a>
+        
+    </div>
+    
+    <img src="/IMG_7431.JPG" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/IMG_7431.JPG" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="./Assests/Vasudhan-Reddy-Resume.pdf" download class="w3-button w3-light-grey w3-padding-large w3-margin-top" style="border-radius: 10px;">
+        <i class="fa fa-download"></i> Download Resume
+    </a>
+    
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2 style = "text-decoration: underline;">About</h2>
+    <hr class="w3-opacity">
+    
+    <p>A passionate and skilled DevOps and Cloud Engineer with a strong background in infrastructure provisioning, automation, and monitoring. I have completed and been certified by <i>AWS Certified Solutions Architect - Associate</i>.<br>
+
+        <br>Have experience working with tools such as Jenkins, Github Actions, Terraform, and Ansible to streamline development processes and ensure efficient code deployment. Proficient in managing and monitoring cloud infrastructure services on AWS and a Beginner in Azure And GCP, as well as maintaining high availability in Kubernetes-based container clusters. Successfully implemented monitoring and logging tools like ELK and Grafana to ensure comprehensive visibility into system performance and implemented GitOps for managing infrastructure as code. My expertise also includes integrating automation testing into the CI/CD pipeline and developing scripts to automate tasks, improving efficiency and reducing manual effort.<br>
+        
+        <br>With a Bachelor's and Master’s Degree in Computer Science and a strong GPA, I am committed to continuous learning and professional growth. I am seeking opportunities to leverage my skills and contribute to the success of DevOps, SRE and cloud engineering projects.</p>
+        
+         <!-- what iam doing Section -->
+        
+         <style>
+            @media screen and (max-width: 768px) {
+                .nested-div {
+                    width: 100%; /* Change width to 100% for smaller screens */
+                    max-width: none; /* Remove max-width constraint */
+                }
+            }
+        </style>
+        
+        <div class="wtmg-3">
+            <h2>What I'm Doing</h2>
+            <div class="row"> 
+                <div class="imdg-ds" style="display: flex; justify-content: center;">
+                    <div class="dv-1" style="background-color: #F0F0F0; padding: 20px; border-radius: 10px; display: flex; align-items: center; flex-wrap: wrap;">
+                        <div class="nested-div" style="background-color: #D1D9DF; padding: 20px; border-radius: 8px; margin-right: 10px; width: 300px; height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 20px;">
+                            <div style="text-align: center;">
+                                <img src="./Assests/infinity.png" alt="devops" width="80" height="80">
+                                <h3>DevOps</h3>
+                                <p>I enjoy improving the speed and quality of delivery, automating processes, and achieving CI/CD.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="nested-div" style="background-color: #D1D9DF; padding: 20px; border-radius: 8px; margin-right: 10px; width: 300px; height: 300px;display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 20px;">
+                            <div style="text-align: center;">
+                                <img src="./Assests/cloud-computing.png" alt="devops" width="80" height="80">
+                                <h3>Cloud</h3>
+                                <p>I enjoy designing, securing and maintenance of an organisation’s cloud-based infrastructure and application.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="nested-div" style="background-color: #D1D9DF; padding: 20px; border-radius: 8px; margin-right: 10px; width: 300px; height: 300px;display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 20px;">
+                            <div style="text-align: center;">
+                                <img src="./Assests/code.png" alt="devops" width="80" height="80">
+                                <h3>Software Dev</h3>
+                                <p>I have a strong passion for learning software development, both for personal growth and to achieve specific goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            
+             <!-- About My skills  -->
+       
+        <h2 class="w3-padding-16" id="My Skills" style = "text-decoration: underline;">My Skills</h2>
+    <h3 class="w3-wide">Cloud & Infrastructure</h3>
+    <div class="w3-light-grey" style="padding-left: 5%; border-radius: 10px;" font-size: large; >
+        <div class="list-content" style="padding-left: 5%; border-radius: 10px;">
+            <ul style="list-style-type: disc; padding-left: 0;">
+                <li style="color: #000; font-weight: bold;">AWS</li>
+                <li style="color: #000; font-weight: bold;">Kubernetes</li>
+                <li style="color: #000; font-weight: bold;">Docker</li>
+                <li style="color: #000; font-weight: bold;">Terraform</li>
+                <li style="color: #000; font-weight: bold;">Cloud Formation</li>
+                <li style="color: #000; font-weight: bold;">Ansible</li>
+            </ul>
+        </div>
+    </div>
+    <h3 class="w3-wide">	Development </h3>
+    <div class="w3-light-grey" style="padding-left: 5%; border-radius: 10px;"font-size: large;>
+        <div class="list-content" style="padding-left: 5%;">
+            <ul style="list-style-type: disc; padding-left: 0;">
+                <li style="color: #000; font-weight: bold;">Python</li>
+                <li style="color: #000; font-weight: bold;">Bash</li>
+                <li style="color: #000; font-weight: bold;">SQL &  MongoDB</li>
+                <li style="color: #000; font-weight: bold;">NodeJS</li>
+                <li style="color: #000; font-weight: bold;">Java</li>
+
+            </ul>
+            
+        </div>
+        </div>
+
+    <h3 class="w3-wide">CI/CD & Tools</h3>
+    <div class="w3-light-grey" style="padding-left: 5%; border-radius: 10px;"font-size: large;>
+       <div class="list-content" style="padding-left: 5%;">
+            <ul style="list-style-type: disc; padding-left: 0;">
+                <li style="color: #000; font-weight: bold;">GIT</li>
+                <li style="color: #000; font-weight: bold;">GitHub Actions</li>
+                <li style="color: #000; font-weight: bold;">Jenkins</li>
+                <li style="color: #000; font-weight: bold;">Trivy</li>
+                <li style="color: #000; font-weight: bold;">SonarQube</li>
+                <li style="color: #000; font-weight: bold;">ArgoCD</li>
+            </ul>
+        </div>
+    </div><br>
+    
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section" style="border-radius: 10px;">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        Tools & Technologies
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5000+</span><br>
+        Lines of code
+    
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1+</span><br>
+         Years of experience
+      </div>
+    </div>
+
+    <a href="./Assests/Vasudhan-Reddy-Resume.pdf" download class="w3-button w3-light-grey w3-padding-large w3-margin-top" style="border-radius: 10px;">
+        <i class="fa fa-download" ></i> Download Resume
+    </a>
+    
+
+    
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2 style = "text-decoration: underline;">Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+        <div class="w3-small w3-well">
+            <p class="contact-info"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Newcastle Upon Tyne, United Kingdom 🇬🇧</p>
+            <p class="contact-info"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +44 7355 044313</p>
+            <p class="contact-info"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: vasudhanreddy4@gmail.com</p>
+        </div>
+    </div>
+    <style>
+        @media screen and (max-width: 600px) {
+            .contact-info {
+                text-align: left;
+                margin-left: 0;
+            }
+        }
+    </style>
+        
+    <!-- Image of location/map -->
+    <img src="./Assests/6675693E-8A99-44EB-A5E9-FF57BCE767E3.JPG" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+   
+    <p>Open for opportunities: Yes</p>
+    <form action="https://formspree.io/f/xyyrjoby" method="POST">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" style="border-radius: 10px;"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"style="border-radius: 10px;"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"style="border-radius: 10px;"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"style="border-radius: 10px;"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit"style="border-radius: 10px;">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    
+    
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"><a href="https://github.com/Vasudhanreddy" target="_blank"></a></i>
+    <p class="w3-medium">. <a href="https://github.com/Vasudhanreddy" target="_blank" class="w3-hover-text-green">&copy; 2024 Vasudhan Reddy</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
